@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuigeNumberCell" rowHeight="64" id="KGk-i7-Jjw" customClass="GuigeNumberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-U4-d9L">
+                        <rect key="frame" x="191" y="24" width="129" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XX-BR-yni">
+                                <rect key="frame" x="1" y="1" width="40" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="5WV-GT-osA"/>
+                                </constraints>
+                                <state key="normal" title="－">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="subtractNumberBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4jc-Ys-ncf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAd-jC-S7b">
+                                <rect key="frame" x="88" y="1" width="40" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="＋">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addNumberBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qYI-Cp-uFD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMX-5H-rlL">
+                                <rect key="frame" x="42" y="1" width="45" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Nyf-Yy-Rci"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7XX-BR-yni" secondAttribute="bottom" constant="1" id="0dA-Fu-hgX"/>
+                            <constraint firstItem="7XX-BR-yni" firstAttribute="leading" secondItem="Qah-U4-d9L" secondAttribute="leading" constant="1" id="35u-dc-XYv"/>
+                            <constraint firstItem="7XX-BR-yni" firstAttribute="top" secondItem="Qah-U4-d9L" secondAttribute="top" constant="1" id="4yS-5B-fac"/>
+                            <constraint firstAttribute="bottom" secondItem="AMX-5H-rlL" secondAttribute="bottom" constant="1" id="79m-w3-pdm"/>
+                            <constraint firstItem="rAd-jC-S7b" firstAttribute="leading" secondItem="AMX-5H-rlL" secondAttribute="trailing" constant="1" id="879-Vo-zlq"/>
+                            <constraint firstItem="AMX-5H-rlL" firstAttribute="leading" secondItem="7XX-BR-yni" secondAttribute="trailing" constant="1" id="Sa3-Sf-nGU"/>
+                            <constraint firstAttribute="trailing" secondItem="rAd-jC-S7b" secondAttribute="trailing" constant="1" id="SjT-Xj-JYI"/>
+                            <constraint firstAttribute="height" constant="32" id="g30-p6-if2"/>
+                            <constraint firstItem="rAd-jC-S7b" firstAttribute="top" secondItem="Qah-U4-d9L" secondAttribute="top" constant="1" id="iPk-Wi-nvq"/>
+                            <constraint firstAttribute="width" constant="129" id="iz7-SM-Ez4"/>
+                            <constraint firstItem="AMX-5H-rlL" firstAttribute="top" secondItem="Qah-U4-d9L" secondAttribute="top" constant="1" id="lo8-1M-JlG"/>
+                            <constraint firstAttribute="bottom" secondItem="rAd-jC-S7b" secondAttribute="bottom" constant="1" id="ok7-Xu-LWU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买数量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q12-4j-OoG">
+                        <rect key="frame" x="5" y="0.0" width="80" height="79"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qah-U4-d9L" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5cL-MQ-9t1"/>
+                    <constraint firstAttribute="trailing" secondItem="Qah-U4-d9L" secondAttribute="trailing" id="Ph4-4h-tHH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addNumberBtn" destination="rAd-jC-S7b" id="1sj-7F-YhT"/>
+                <outlet property="numberLabel" destination="AMX-5H-rlL" id="cIE-Qb-jIE"/>
+                <outlet property="subtractNumberBtn" destination="7XX-BR-yni" id="swb-jm-BwJ"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="61"/>
+        </tableViewCell>
+    </objects>
+</document>

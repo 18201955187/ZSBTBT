@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZYMyPointmentAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="282"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDt-Ec-B0D">
+                    <rect key="frame" x="38" y="93" width="184" height="96"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPointment_chenggong" translatesAutoresizingMaskIntoConstraints="NO" id="yQV-RK-wlD">
+                            <rect key="frame" x="76" y="17" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="4RQ-oZ-0jX"/>
+                                <constraint firstAttribute="height" constant="32" id="pOv-am-8wf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="yQV-RK-wlD" firstAttribute="top" secondItem="BDt-Ec-B0D" secondAttribute="top" constant="17" id="6Al-6V-njQ"/>
+                        <constraint firstItem="yQV-RK-wlD" firstAttribute="centerX" secondItem="BDt-Ec-B0D" secondAttribute="centerX" id="FYP-lW-jkn"/>
+                        <constraint firstAttribute="width" constant="184" id="ItF-np-Hx7"/>
+                        <constraint firstAttribute="height" constant="96" id="WlG-8c-EKM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分派成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I25-pF-Wvb">
+                    <rect key="frame" x="40" y="153" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="0Gc-Ha-ZEs"/>
+                        <constraint firstAttribute="height" constant="21" id="jGV-rw-fHX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99999600648880005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I25-pF-Wvb" firstAttribute="centerX" secondItem="BDt-Ec-B0D" secondAttribute="centerX" id="8pb-XF-LrQ"/>
+                <constraint firstItem="I25-pF-Wvb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="153" id="COc-WV-ZpH"/>
+                <constraint firstItem="BDt-Ec-B0D" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pRK-8M-rwi"/>
+                <constraint firstItem="BDt-Ec-B0D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u4Y-qx-Nee"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="yQV-RK-wlD" id="zjV-az-fjx"/>
+                <outlet property="msgTitleLabel" destination="I25-pF-Wvb" id="HZn-yQ-lVK"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="-45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="myPointment_chenggong" width="32" height="32"/>
+    </resources>
+</document>

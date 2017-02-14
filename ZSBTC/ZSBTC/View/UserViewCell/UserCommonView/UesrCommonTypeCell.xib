@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UesrCommonTypeCell" rowHeight="241" id="KGk-i7-Jjw" customClass="UesrCommonTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-Wa-pWe">
+                        <rect key="frame" x="0.0" y="10" width="341" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-L5-Ltm">
+                                <rect key="frame" x="15" y="0.0" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="zoZ-kh-RTr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.053427914040000003" green="0.05586939103" blue="0.053841565090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看我的订单" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amw-kf-BAV">
+                                <rect key="frame" x="174" y="0.0" width="140" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="99z-DC-0bb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inner_right" translatesAutoresizingMaskIntoConstraints="NO" id="fzs-Ab-pdW">
+                                <rect key="frame" x="319" y="13" width="7" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="ncB-ZM-Qv8"/>
+                                    <constraint firstAttribute="height" constant="14" id="ukU-Dr-b7X"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FsU-L5-Ltm" secondAttribute="bottom" id="0rn-Xa-4nS"/>
+                            <constraint firstItem="FsU-L5-Ltm" firstAttribute="leading" secondItem="jKc-Wa-pWe" secondAttribute="leading" constant="15" id="3Hd-1c-tOb"/>
+                            <constraint firstItem="fzs-Ab-pdW" firstAttribute="leading" secondItem="amw-kf-BAV" secondAttribute="trailing" constant="5" id="Ba6-Px-eAy"/>
+                            <constraint firstAttribute="bottom" secondItem="amw-kf-BAV" secondAttribute="bottom" id="LbB-C9-v7I"/>
+                            <constraint firstItem="FsU-L5-Ltm" firstAttribute="top" secondItem="jKc-Wa-pWe" secondAttribute="top" id="MKx-Ls-YMl"/>
+                            <constraint firstItem="amw-kf-BAV" firstAttribute="top" secondItem="jKc-Wa-pWe" secondAttribute="top" id="nok-Vs-aJM"/>
+                            <constraint firstItem="fzs-Ab-pdW" firstAttribute="centerY" secondItem="jKc-Wa-pWe" secondAttribute="centerY" id="qyf-8L-nmL"/>
+                            <constraint firstAttribute="trailing" secondItem="fzs-Ab-pdW" secondAttribute="trailing" constant="15" id="reL-Bt-iMy"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mJF-uk-vuc" appends="YES" id="NAV-UX-azA"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jKc-Wa-pWe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="33u-cJ-fl1"/>
+                    <constraint firstAttribute="bottom" secondItem="jKc-Wa-pWe" secondAttribute="bottom" id="GI7-Rs-ex1"/>
+                    <constraint firstAttribute="trailing" secondItem="jKc-Wa-pWe" secondAttribute="trailing" id="MjR-8t-NIy"/>
+                    <constraint firstItem="jKc-Wa-pWe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VIX-MM-C3c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editTypeLabel" destination="amw-kf-BAV" id="pLe-zi-Mzf"/>
+                <outlet property="titleLabel" destination="FsU-L5-Ltm" id="iqQ-cg-bCg"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="147"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="mJF-uk-vuc">
+            <connections>
+                <action selector="tapCkick:" destination="KGk-i7-Jjw" id="kzO-Y6-prc"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Inner_right" width="8" height="16"/>
+    </resources>
+</document>

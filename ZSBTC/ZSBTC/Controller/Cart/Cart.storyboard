@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DKb-za-0qN">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ta Bar Controller-->
+        <scene sceneID="xrH-6b-FRa">
+            <objects>
+                <tabBarController id="DKb-za-0qN" customClass="ZSTaBarController" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QVw-pb-Zvp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="98b-qa-jmg" kind="relationship" relationship="viewControllers" id="zgz-Ss-bEg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojq-0N-Jy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-873" y="-611"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="r8a-Yg-vTn">
+            <objects>
+                <navigationController storyboardIdentifier="CartNav" navigationBarHidden="YES" id="98b-qa-jmg" customClass="ZFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="waa-YB-ZAO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MaH-JA-RCd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VRZ-TR-0Au" kind="relationship" relationship="rootViewController" id="d3R-kz-5hZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRQ-Vc-uZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="-611"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="KtX-TG-W1d">
+            <objects>
+                <viewController storyboardIdentifier="CartViewController" automaticallyAdjustsScrollViewInsets="NO" id="VRZ-TR-0Au" customClass="CartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b3a-Tr-m6Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xoo-9f-WWX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o9j-Nl-y6F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvg-tz-oE6">
+                                <rect key="frame" x="0.0" y="475" width="320" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8N9-K1-4UZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="ezE-mi-ugM"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-pN-9np">
+                                        <rect key="frame" x="200" y="0.0" width="120" height="44"/>
+                                        <color key="backgroundColor" red="0.96560402680000001" green="0.13594943879999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="HsZ-9b-Kb0"/>
+                                        </constraints>
+                                        <state key="normal" title="去结算">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8N9-K1-4UZ" secondAttribute="trailing" id="13d-OD-CIb"/>
+                                    <constraint firstAttribute="height" constant="44" id="1tm-fY-imk"/>
+                                    <constraint firstAttribute="bottom" secondItem="CEq-pN-9np" secondAttribute="bottom" id="4D7-Eb-UMW"/>
+                                    <constraint firstAttribute="trailing" secondItem="CEq-pN-9np" secondAttribute="trailing" id="BDA-h3-BDb"/>
+                                    <constraint firstItem="CEq-pN-9np" firstAttribute="top" secondItem="pvg-tz-oE6" secondAttribute="top" id="RDr-1k-McP"/>
+                                    <constraint firstItem="8N9-K1-4UZ" firstAttribute="leading" secondItem="pvg-tz-oE6" secondAttribute="leading" id="YOX-zT-mZr"/>
+                                    <constraint firstItem="8N9-K1-4UZ" firstAttribute="top" secondItem="pvg-tz-oE6" secondAttribute="top" id="uej-en-yKR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCj-wW-RLW">
+                                <rect key="frame" x="114" y="115" width="93" height="22"/>
+                                <color key="backgroundColor" red="0.96560402680000001" green="0.13594943879999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="dMI-MZ-tA8"/>
+                                    <constraint firstAttribute="width" constant="93" id="uWc-Ed-25t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="登录/注册"/>
+                                <connections>
+                                    <action selector="loginBtnClick:" destination="VRZ-TR-0Au" eventType="touchUpInside" id="It5-kc-uTQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Nr-zfw">
+                                <rect key="frame" x="77" y="215" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="减">
+                                    <color key="titleColor" red="0.96560402680000001" green="0.1801402822" blue="0.082524651929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="subtractBtnClick:" destination="VRZ-TR-0Au" eventType="touchUpInside" id="QVI-xF-bS7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrC-ud-OS9">
+                                <rect key="frame" x="193" y="215" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="加">
+                                    <color key="titleColor" red="0.96560402680000001" green="0.1801402822" blue="0.082524651929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addbtnClick:" destination="VRZ-TR-0Au" eventType="touchUpInside" id="Tk2-Dr-GGh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LCj-wW-RLW" firstAttribute="top" secondItem="b3a-Tr-m6Y" secondAttribute="bottom" constant="95" id="1Xd-vX-80c"/>
+                            <constraint firstItem="Xoo-9f-WWX" firstAttribute="top" secondItem="pvg-tz-oE6" secondAttribute="bottom" id="H9i-Hk-3Of"/>
+                            <constraint firstItem="pvg-tz-oE6" firstAttribute="leading" secondItem="o9j-Nl-y6F" secondAttribute="leading" id="kq5-5O-RHx"/>
+                            <constraint firstAttribute="trailing" secondItem="pvg-tz-oE6" secondAttribute="trailing" id="rm4-Tw-AY4"/>
+                            <constraint firstItem="LCj-wW-RLW" firstAttribute="centerX" secondItem="o9j-Nl-y6F" secondAttribute="centerX" id="utS-EZ-Wjx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="购物车" id="JFK-4Z-bsh"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqx-vx-cuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="-611"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
